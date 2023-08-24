@@ -1,0 +1,54 @@
+/*Step 9*/
+html{
+    box-sizing:border-box;
+  }
+
+  /*Step 10*/
+  *,::before,::after{
+    box-sizing:inherit;
+  }
+
+  /*Step 11,12*/
+  #piano{
+    background-color: #00471b;
+     width: 992px;
+     height: 290px;
+     margin: 80px auto;
+    padding: 90px 20px 0 20px;
+  }
+
+  /*Step 13,14,15*/
+  .keys{
+    background-color: #040404;
+     width: 949px;
+    height: 180px;
+    padding-left: 2px;
+  }
+
+  /*Step 16,17*/
+  .key{
+    background-color:#ffffff;
+    position:relative;
+    width:41px;
+    height:175px;
+    margin:2px;
+    float:left;
+  }
+
+  /*Step 18,19,20*/
+  .key.black--key::after{
+    background-color:#1d1e22;
+    content:"";
+    position:absolute;
+    left:-18px;
+    width:32px;
+    height:100px;
+  }
+
+  /*Step 22,23*/
+  .logo{
+    width:200px;
+    position:absolute;
+    top:23px;
+    position:relative;
+  }
