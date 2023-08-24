@@ -8,21 +8,49 @@ html{
     box-sizing:inherit;
   }
 
-  /*Step 11,12*/
+  /*Step 27,28,29,30*/
+  @media (max-width: 768px) {
+    #piano{
+        width:358px;
+      }
+      .keys{
+        width:318px;
+      }
+      .logo{
+        width:150px;
+      }
+  }
+
+  /*Step 32,33*/
+  @media (min-width: 769px) and (max-width: 1199px){
+    #piano {
+        width: 675px;
+      }
+    
+      .keys {
+        width: 633px;
+      }
+  }
+
+  /*Step 11,12,23,24*/
   #piano{
     background-color: #00471b;
      width: 992px;
      height: 290px;
      margin: 80px auto;
     padding: 90px 20px 0 20px;
+    position:relative;
+    border-radius:10px;
   }
 
-  /*Step 13,14,15*/
+  /*Step 13,14,15,25,31*/
   .keys{
     background-color: #040404;
      width: 949px;
     height: 180px;
     padding-left: 2px;
+    border-radius:0 0 3px 3px;
+    overflow:hidden;
   }
 
   /*Step 16,17*/
@@ -35,7 +63,7 @@ html{
     float:left;
   }
 
-  /*Step 18,19,20*/
+  /*Step 18,19,20,26*/
   .key.black--key::after{
     background-color:#1d1e22;
     content:"";
@@ -43,12 +71,13 @@ html{
     left:-18px;
     width:32px;
     height:100px;
+    border-radius: 0 0 3px 3px;
   }
 
-  /*Step 22,23*/
+  /*Step 22*/
   .logo{
     width:200px;
     position:absolute;
     top:23px;
-    position:relative;
+    
   }
